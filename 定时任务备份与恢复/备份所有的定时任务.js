@@ -12,8 +12,8 @@ if (isPro) {
   packageName = com.stardust.autojs.core
   TimedTaskManager = packageName.timing.TimedTaskManager.Companion
 }
-let timedTasks = TimedTaskManager.getInstance().getAllTasksAsList()
-let intentTasks = TimedTaskManager.getInstance().getAllIntentTasksAsList()
+let timedTasks = TimedTaskManager.INSTANCE.getAllTasksAsList()
+let intentTasks = TimedTaskManager.INSTANCE.getAllIntentTasksAsList()
 
 log('timedTasks: ' + JSON.stringify(timedTasks))
 log('intentTasks: ' + JSON.stringify(intentTasks))

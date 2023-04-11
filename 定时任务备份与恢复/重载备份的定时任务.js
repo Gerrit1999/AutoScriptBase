@@ -12,12 +12,12 @@ if (isPro) {
   packageName = com.stardust.autojs.core
   TimedTaskManager = packageName.timing.TimedTaskManager.Companion
 }
-let timedTasks = TimedTaskManager.getInstance().getAllTasksAsList()
-let intentTasks = TimedTaskManager.getInstance().getAllIntentTasksAsList()
+let timedTasks = TimedTaskManager.INSTANCE.getAllTasksAsList()
+let intentTasks = TimedTaskManager.INSTANCE.getAllIntentTasksAsList()
 log('exist timedTasks: ' + JSON.stringify(timedTasks))
 log('exist intentTasks: ' + JSON.stringify(intentTasks))
 
-let taskManager = TimedTaskManager.getInstance()
+let taskManager = TimedTaskManager.INSTANCE
 let removeExists = true
 if (removeExists) {
   for (let i = 0; i < timedTasks.size(); i++) {
